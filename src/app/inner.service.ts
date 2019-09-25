@@ -35,7 +35,7 @@ export class InnerService {
   }
 
   public getDelayedObservableFrom(input: string): Observable<string> {
-    return of('delayed ' + input).pipe(delay(500));
+    return of('delayed ' + input).pipe(delay(3000));
   }
 
   public doActionOnServer(id: string, action: string): Observable<string> {
